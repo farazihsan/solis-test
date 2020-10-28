@@ -1,0 +1,55 @@
+.checkbox-container {
+  display: flex;
+  line-height: 30px;
+  margin-right:10px;
+}
+.checkbox {
+  padding: 8px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 10px;
+}
+  .checkbox.checked {
+    background-image: url('/assets/ic_checkbox_checked.svg');
+    color: blue;
+  }
+  .checkbox.unchecked {
+    background-image: url('/assets/ic_checkbox_unchecked.svg');
+  }
+  .checkbox.partial {
+    background-image: url('/assets/ic_checkbox_half.svg');
+  }
+
+.inline{
+  display:flex;
+}
+table tr td{
+  min-width:150px;
+}
+.checked.cls-1 {
+  fill: blue !important;
+}
+.disabled{
+  pointer-events:none;
+  opacity:0.5;
+}
+.notification {
+  position: relative;
+  line-height: 20px;
+}
+
+  .notification .badge {
+    position: absolute;
+    top: 10px;
+    right: 128px;
+    padding: 2px 6px;
+    border-radius: 100%;
+    background: #FFC107;
+    color: white;
+    height: 17px;
+    width: 8px;
+    text-align: center;
+    font-size: 12px;
+    border: 2px solid #fff;
+    border-radius: 68px;
+  }

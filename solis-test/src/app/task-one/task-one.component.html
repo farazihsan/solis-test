@@ -1,0 +1,118 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Base Checkbox
+      </th>
+      <th>
+       Stacked Checkbox
+      </th>
+      <th>
+       Inline Checkbox
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="checkbox-container" (click)="OncheckBox()">
+          <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+          <span> Checkbox</span>
+        </div>
+      </td>
+      <td>
+        <div>
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="inline">
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+          <div class="checkbox-container" (click)="OncheckBox()">
+            <label class="checkbox" [ngClass]="checkbox_one ? 'checked': 'unchecked'"></label>
+            <span> Checkbox</span>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        Checked Disabled
+      </th>
+      <th>
+        Checked Disabled
+      </th>
+      <th>
+        Checkbox Disabled
+      </th>
+      <th>
+        Checked partial
+      </th>
+      <th>
+        Checked partial Disabled
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="checkbox-container notification">
+          <label class="checkbox checked "></label>
+          <span class="badge">1</span>
+          <span> text_primary</span>
+
+        </div>
+      </td>
+      <td> 
+        <div class="checkbox-container disabled">
+          <label class="checkbox checked "></label>
+          <span> Checkbox</span>
+        </div>
+      </td>
+
+      <td>
+        <div class="checkbox-container disabled" >
+          <label class="checkbox unchecked "></label>
+          <span> Checkbox</span>
+        </div>
+      </td>
+      <td>
+        <div class="checkbox-container">
+          <label class="checkbox partial" ></label>
+          <span> Checkbox</span>
+        </div>
+      </td>
+      <td>
+        <div class="checkbox-container disabled">
+          <label class="checkbox partial" ></label>
+          <span> Checkbox</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
